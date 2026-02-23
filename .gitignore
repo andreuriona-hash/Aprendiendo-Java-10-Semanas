@@ -15,3 +15,10 @@ target/
 # Archivos del sistema
 .DS_Store
 Thumbs.db
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+
+# Carpeta de compilación de Java
+*.class
