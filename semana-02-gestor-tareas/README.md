@@ -14,3 +14,6 @@ Programa en Java que implementa un gestor de tareas usando Programación Orienta
 -  Menú interactivo con validaciones
 
 ##  Estructura del Proyecto
+##  Pruebas realizadas
+- Se probaron todas las funcionalidades con éxito
+- Validaciones funcionan correctamente
