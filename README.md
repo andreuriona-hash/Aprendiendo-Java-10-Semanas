@@ -8,7 +8,7 @@
 |--------|------|---------|
 | 1 | Java Esencial + Git | semana-01-calificaciones/ |
 | 2 | P00 Fundamentos | semana-02-gestor-tareas/ |
-| 3 | POO - Clases y Objetos | semana-03-vehiculos/ |
+| 3 | Gestion de vehiculos POO | semana-03-vehiculos/ |
 | 4 | Herencia y Polimorfismo | semana-04-herencia/ |
 | 5 | Manejo de Excepciones | semana-05-excepciones/ |
 | 6 | Colecciones | semana-06-colecciones/ |
@@ -23,6 +23,21 @@
 - Programa que gestiona notas de 5 estudiantes
 - Calcula promedios, nota máxima/mínima, aprobados/reprobados
 - Validación de notas y manejo de errores
+  
+### Semana 2: Gestor de Tareas POO
+- Clase Tarea con encapsulamiento
+- GestorTareas con ArrayList
+- IDs automáticos
+- Filtros por estado (pendientes/completadas)
+- Menú interactivo
+
+### Semana 3: Gestión de Vehículos POO
+- Clase abstracta Vehiculo
+- Herencia (Auto, Moto, Camion)
+- Interfaz Electrico
+- Vehículos eléctricos
+- Demostración de polimorfismo
+- Gestor con ArrayList y filtros
 
 ## 📸 Capturas
 Las capturas de cada proyecto están en sus respectivas carpetas.
