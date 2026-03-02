@@ -123,3 +123,4 @@ public class GestorVehiculos {
     public boolean hayVehiculos() {
         return !vehiculos.isEmpty();
     }
+}    
