@@ -4,7 +4,6 @@
 Sistema de gestión de flota vehicular que demuestra los conceptos de **herencia, polimorfismo e interfaces** en Java.
 
 ##  Diagrama de Clases
-
                 [   Vehiculo      ] (abstract)
                          │
      +───────────────────+───────────────────+
