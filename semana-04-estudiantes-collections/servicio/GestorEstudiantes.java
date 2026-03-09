@@ -32,6 +32,24 @@ public class GestorEstudiantes {
     public Estudiante buscar(String carnet) {
         return porCarnet.get(carnet); 
     }
+
+    public boolean eliminar(String carnet){
+        Estudiante e = porCarnet.remove(carnet);
+        if (e == null) return false;
+        ranking.remove(e);
+        historial.add("ELIMINAR:" + carnet + "-" + e.getNombre());
+        return true;
+    }
+
+    public boolean actualizarPromedio(String carnet, double nuevoPromedio){
+        Estudiante e = porCarnet.get(carnet);
+        if (e == null) return false;
+        ranking.remove(e);
+        e.setPromedio(nuevoPromedio);
+        ranking.add(e);
+        historial.add("ACTUALIZAR:" + carnet + "nuevo promedio:" + nuevoPromedio);
+        return true;
+    }
     
     public boolean existeCarnet(String carnet) {
         return porCarnet.containsKey(carnet);
