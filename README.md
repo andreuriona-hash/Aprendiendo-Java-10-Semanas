@@ -39,5 +39,11 @@
 - Demostración de polimorfismo
 - Gestor con ArrayList y filtros
 
+### Semana 4: Sistema de Estudiantes con Collections
+- HashMap para búsqueda por carnet
+- TreeSet para ranking automático
+- ArrayList para historial
+- Comparable con desempate obligatorio
+
 ## 📸 Capturas
 Las capturas de cada proyecto están en sus respectivas carpetas.
