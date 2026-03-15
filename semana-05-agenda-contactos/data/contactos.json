@@ -1,0 +1,72 @@
+[
+  {
+    "id": "C001",
+    "nombre": "Juan Perez",
+    "telefono": "72345678",
+    "email": "juan.perez@gmail.com",
+    "direccion": "Av. 6 de Agosto 123"
+  },
+  {
+    "id": "C002",
+    "nombre": "Maria Lopez",
+    "telefono": "79876543",
+    "email": "maria.lopez@hotmail.com",
+    "direccion": ""
+  },
+  {
+    "id": "C003",
+    "nombre": "Pedro Quispe",
+    "telefono": "68112233",
+    "email": "pedro.quispe@yahoo.com",
+    "direccion": "Calle Cochabamba 45"
+  },
+  {
+    "id": "C004",
+    "nombre": "Ana Torres",
+    "telefono": "71234567",
+    "email": "ana.torres@gmail.com",
+    "direccion": "Av. America 789"
+  },
+  {
+    "id": "C005",
+    "nombre": "Carlos Mamani",
+    "telefono": "72456890",
+    "email": "carlos.mamani@hotmail.com",
+    "direccion": "Calle Potosi 234"
+  },
+  {
+    "id": "C006",
+    "nombre": "Lucia Flores",
+    "telefono": "69012345",
+    "email": "lucia.flores@gmail.com",
+    "direccion": "Av. Busch 567"
+  },
+  {
+    "id": "C007",
+    "nombre": "Roberto Rojas",
+    "telefono": "77788990",
+    "email": "roberto.rojas@yahoo.com",
+    "direccion": "Calle La Paz 890"
+  },
+  {
+    "id": "C008",
+    "nombre": "Silvia Choque",
+    "telefono": "65678901",
+    "email": "silvia.choque@gmail.com",
+    "direccion": "Av. Santa Cruz 1234"
+  },
+  {
+    "id": "C009",
+    "nombre": "Diego Arce",
+    "telefono": "70345678",
+    "email": "diego.arce@hotmail.com",
+    "direccion": ""
+  },
+  {
+    "id": "C010",
+    "nombre": "Patricia Lima",
+    "telefono": "68899011",
+    "email": "patricia.lima@gmail.com",
+    "direccion": "Calle Oruro 567"
+  }
+]
