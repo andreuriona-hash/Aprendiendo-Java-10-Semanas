@@ -1,8 +1,9 @@
 # Aprendiendo Java en 10 Semanas
 
-**Autor:** Andre Sebastian Uriona Fernandez
+**Autor:** Andre Sebastian Uriona Fernandez 
+**C.I:** 12959734
 
-## 📚 Contenido del Repositorio
+##  Contenido del Repositorio
 
 | Semana | Tema | Carpeta |
 |--------|------|---------|
@@ -17,7 +18,7 @@
 | 9 | Interfaces Gráficas | semana-09-gui/ |
 | 10 | Proyecto Final | semana-10-proyecto/ |
 
-## 🚀 Proyectos de cada semana
+##  Proyectos de cada semana
 
 ### Semana 1: Sistema de Calificaciones
 - Programa que gestiona notas de 5 estudiantes
@@ -45,5 +46,13 @@
 - ArrayList para historial
 - Comparable con desempate obligatorio
 
-## 📸 Capturas
+### Semana 5: Agenda de Contactos con Excepciones y JSON
+- Excepciones personalizadas (checked y unchecked)
+- Persistencia en JSON con Gson
+- Backup automático antes de cada guardado
+- Validaciones en todos los campos
+- IDs automáticos (C001, C002...)
+- Búsqueda por ID y por nombre parcial
+
+##  Capturas
 Las capturas de cada proyecto están en sus respectivas carpetas.
