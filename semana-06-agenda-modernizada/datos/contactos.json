@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C001",
+    "nombre": "Juan Perez",
+    "telefono": "72345678",
+    "email": "juan.perez@gmail.com",
+    "categoria": "Amigos",
+    "direccion": "Av. 6 de Agosto 123"
+  },
+  {
+    "id": "C002",
+    "nombre": "Maria Lopez",
+    "telefono": "79876543",
+    "email": "maria.lopez@hotmail.com",
+    "categoria": "Trabajo",
+    "direccion": ""
+  },
+  {
+    "id": "C003",
+    "nombre": "Pedro Quispe",
+    "telefono": "68112233",
+    "email": "pedro.quispe@yahoo.com",
+    "categoria": "Familia",
+    "direccion": "Calle Cochabamba 45"
+  }
+]
