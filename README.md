@@ -1,7 +1,7 @@
 # Aprendiendo Java en 10 Semanas
 
 **Autor:** Andre Sebastian Uriona Fernandez 
-\n**C.I:** 12959734
+**C.I:** 12959734
 
 ##  Contenido del Repositorio
 
@@ -110,7 +110,7 @@ semana-05-agenda-contactos/
                                       ejecucion4.png
                                         ejecucion5.png
                                          ejecucion6.png
-semana -06 - agenda - modernizada / <-- NUEVO
+semana -06 - agenda - modernizada / 
             pom . xml
              datos /
                  contactos.backup.json
