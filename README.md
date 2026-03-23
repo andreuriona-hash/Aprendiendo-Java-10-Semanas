@@ -21,116 +21,116 @@
 ##  Estructura del repositorio
 
 Aprendiendo-Java-10-Semanas/
-    README.md
-    .gitignore
+•	README.md
+•	.gitignore
 semana-01-calificaciones/
-               Main.java
-               README.md
-               capturas/
-               ejecucion1.png
-               ejecucion2.png/
+•	Main.java
+•	README.md
+capturas/
+•	ejecucion1.png
+•	ejecucion2.png/
 semana-02-gestor-tareas/ 
-              Main.java
-              README.md
-              modelo/
-              .gitkeep
-              Tarea.java
-              servicio/
-              .gitkeep
-              GestorTareas.java
+•	Main.java
+•	README.md
+modelo/
+•	.gitkeep
+•	Tarea.java
+servicio/
+•	.gitkeep
+•	GestorTareas.java
               capturas/
-              ejecucion1.png
-              ejecucion2.png
-              ejecucion3.png
-              ejecucion4.png
-              ejecucion5.png
-              ejecucion6.png/
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
+•	ejecucion4.png
+•	ejecucion5.png
+•	ejecucion6.png/
 semana-03-vehiculos-poo/ 
-             Main.java
-             README.md
+•	Main.java
+•	README.md
              modelo/
-                   .gitkeep
-                     Auto.java
-                     AutoElectrico.java
-                      Camion.java
-                      Electrico.java
-                       Moto.java 
-                       MotoElectrica.java
-                        Vehiculo.java                                                                                                                   
+•	.gitkeep
+•	Auto.java
+•	AutoElectrico.java
+•	Camion.java
+•	Electrico.java
+•	Moto.java 
+•	MotoElectrica.java
+•	Vehiculo.java                                                                                                                   
                    servicio/
-                           .gitkeep
-                             GestorVehiculos.java
+•	.gitkeep
+•	GestorVehiculos.java
                    capturas/
-                   ejecucion1.png
-                    ejecucion2.png
-                     ejecucion3.png
-                      ejecucion4.png
-                       ejecucion5.png
-                         ejecucion6.png
-                           ejecucion7.png
-                            ejecucion8.png
-                              ejecucion9.png
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
+•	ejecucion4.png
+•	ejecucion5.png
+•	ejecucion6.png
+•	ejecucion7.png
+•	ejecucion8.png
+•	ejecucion9.png
 semana-04-estudiantes-collections/ 
-                      Main.java
-                      README.md
+•	Main.java
+•	README.md
                       modelo/
-                             .gitkeep
-                               Estudiante.java
+•	.gitkeep
+•	Estudiante.java
                                  servicio/
-                                   .gitkeep
-                                     GestorEstudiantes.java
+•	.gitkeep
+•	GestorEstudiantes.java
                                        capturas/
-                                         ejecucion1.png
-                                           ejecucion2.png
-                                             ejecucion3.png
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
 semana-05-agenda-contactos/
-        pom.xml
-          README.md
+•	pom.xml
+•	README.md
            src/
-            main/
+           main/
              java/
-              Main.java
+•	Main.java
                modelo/
-                Contacto.java
+•	Contacto.java
                   servicio/
-                   AgendaContactos.java
+•	AgendaContactos.java
                     util/
-                      ManejadorJSON.java
+•	ManejadorJSON.java
                         exception/
-                           ContactoNoEncontradoException.java
-                           ContactoExistenteException.java
-                             DatoInvalidoException.java
+•	ContactoNoEncontradoException.java
+•	ContactoExistenteException.java
+•	DatoInvalidoException.java
                               data/
-                                contactos.backup.json
-                                 contactos.json
+•	contactos.backup.json
+•	contactos.json
                                   capturas/
-                                   ejecucion1.png
-                                    ejecucion2.png
-                                     ejecucion3.png
-                                      ejecucion4.png
-                                        ejecucion5.png
-                                         ejecucion6.png
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
+•	ejecucion4.png
+•	ejecucion5.png
+•	ejecucion6.png
 semana -06 - agenda - modernizada / 
-            pom . xml
-             datos /
-                 contactos.backup.json
-                 contactos . json
-                  test_backup.json
-                   test_contactos.json
+•	pom . xml
+            datos /
+•	contactos.backup.json
+•	contactos . json
+•	test_backup.json
+•	test_contactos.json
                    src /
                      main / java /
                       modelo /
-                        Contacto . java
-                         servicio /
-                           GestorContactos . java
+•	Contacto . java
+servicio /
+•	GestorContactos . java
                             util /
-                             ManejadorJSON . java
-                              Main . java
+•	ManejadorJSON . java
+•	Main . java
                                test / java /
                                 servicio /
-                                 GestorContactosTest . java
-                                 .gitignore
-                                  README . md
+•	GestorContactosTest . java
+•	.gitignore
+•	README . md
 
 
 
