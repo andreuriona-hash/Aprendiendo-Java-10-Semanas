@@ -1,7 +1,7 @@
 # Aprendiendo Java en 10 Semanas
 
 **Autor:** Andre Sebastian Uriona Fernandez 
-**C.I:** 12959734
+\n**C.I:** 12959734
 
 ##  Contenido del Repositorio
 
