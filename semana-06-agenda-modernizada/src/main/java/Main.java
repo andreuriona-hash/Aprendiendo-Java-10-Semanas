@@ -10,6 +10,18 @@ import java.util.Scanner;
 public class Main {
     
     private static GestorContactos gestor = new GestorContactos();
+    static {
+        try {
+            gestor.agregarContacto(new Contacto("Juan Perez", "72345678", "juan.perez@gmail.com", "Amigos", "Av. 6 de Agosto 123"));
+            gestor.agregarContacto(new Contacto("Maria Lopez", "79876543", "maria.lopez@hotmail.com", "Trabajo", ""));
+            gestor.agregarContacto(new Contacto("Pedro Quispe", "68112233", "pedro.quispe@yahoo.com", "Familia", "Calle Cochabamba 45"));
+            gestor.agregarContacto(new Contacto("Ana Torres", "71234567", "ana.torres@gmail.com", "Amigos", "Av. America 789"));
+            gestor.agregarContacto(new Contacto("Carlos Mamani", "72456890", "carlos.mamani@hotmail.com", "Trabajo", "Calle Potosi 234"));
+            System.out.println("Contactos de ejemplo cargados automaticamente.");
+        } catch (ContactoDuplicadoException e) {
+            System.out.println("Error al cargar contactos de ejemplo: " + e.getMessage());
+        }
+}
     private static Scanner scanner = new Scanner(System.in);
     
     public static void main(String[] args) {

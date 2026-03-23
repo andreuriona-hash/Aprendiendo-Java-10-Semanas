@@ -30,13 +30,5 @@
     "email": "ana.torres@gmail.com",
     "categoria": "Amigos",
     "direccion": "Av. America 789"
-  },
-  {
-    "id": "C005",
-    "nombre": "Carlos Mamani",
-    "telefono": "72456890",
-    "email": "carlos.mamani@hotmail.com",
-    "categoria": "Trabajo",
-    "direccion": "Calle Potosi 234"
   }
 ]
