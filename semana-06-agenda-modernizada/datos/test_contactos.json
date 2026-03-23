@@ -1,0 +1,34 @@
+[
+  {
+    "id": "C001",
+    "nombre": "Ana Lopez",
+    "telefono": "76543210",
+    "email": "ana@email.com",
+    "categoria": "Amigos",
+    "direccion": "Calle 1"
+  },
+  {
+    "id": "C002",
+    "nombre": "Carlos Rios",
+    "telefono": "71112233",
+    "email": "carlos@email.com",
+    "categoria": "Trabajo",
+    "direccion": "Calle 2"
+  },
+  {
+    "id": "C003",
+    "nombre": "Beatriz Vega",
+    "telefono": "68881234",
+    "email": "beatriz@email.com",
+    "categoria": "Trabajo",
+    "direccion": "Calle 3"
+  },
+  {
+    "id": "C004",
+    "nombre": "David Cruz",
+    "telefono": "72223344",
+    "email": "david@email.com",
+    "categoria": "Familia",
+    "direccion": "Calle 4"
+  }
+]

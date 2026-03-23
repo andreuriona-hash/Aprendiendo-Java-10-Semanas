@@ -1,4 +1,5 @@
 package servicio;
+
 import modelo.Contacto;
 import exception.ContactoDuplicadoException;
 import util.ManejadorJSON;
@@ -7,14 +8,23 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class GestorContactos {
-    private static final String ARCHIVO = "datos/contactos.json";
-    private static final String BACKUP = "datos/contactos.backup.json";
     
+    private static final String ARCHIVO_DEFAULT = "datos/contactos.json";
+    private static final String BACKUP_DEFAULT = "datos/contactos.backup.json";
+    
+    private String archivo;
+    private String backup;
     private List<Contacto> contactos;
     private int nextId;
     
     public GestorContactos() {
-        this.contactos = ManejadorJSON.cargar(ARCHIVO);
+        this(ARCHIVO_DEFAULT, BACKUP_DEFAULT);
+    }
+    
+    public GestorContactos(String archivo, String backup) {
+        this.archivo = archivo;
+        this.backup = backup;
+        this.contactos = ManejadorJSON.cargar(archivo);
         calcularSiguienteId();
         System.out.println("Agenda cargada con " + contactos.size() + " contactos.");
     }
@@ -26,11 +36,8 @@ public class GestorContactos {
             if (id != null && id.startsWith("C")) {
                 try {
                     int num = Integer.parseInt(id.substring(1));
-                    if (num >= nextId) {
-                        nextId = num + 1;
-                    }
-                } catch (NumberFormatException e) {
-                }
+                    if (num >= nextId) nextId = num + 1;
+                } catch (NumberFormatException e) {}
             }
         }
     }
@@ -40,19 +47,16 @@ public class GestorContactos {
     }
     
     private void persistir() {
-        ManejadorJSON.guardarConBackup(new ArrayList<>(contactos), ARCHIVO, BACKUP);
+        ManejadorJSON.guardarConBackup(new ArrayList<>(contactos), archivo, backup);
     }
     
     public void agregarContacto(Contacto contacto) throws ContactoDuplicadoException {
         boolean existe = contactos.stream()
                 .anyMatch(c -> c.getNombre().equalsIgnoreCase(contacto.getNombre()));
-        
         if (existe) {
             throw new ContactoDuplicadoException("Ya existe un contacto con el nombre: " + contacto.getNombre());
         }
-        
-        String id = generarId();
-        contacto.setId(id);
+        contacto.setId(generarId());
         contactos.add(contacto);
         persistir();
     }
@@ -93,21 +97,5 @@ public class GestorContactos {
     
     public int totalContactos() {
         return contactos.size();
-    }
-    
-    public void mostrarEstadisticas() {
-        System.out.println("\n=== ESTADISTICAS ===");
-        System.out.println("Total contactos: " + totalContactos());
-        
-        long conEmail = contactos.stream()
-                .filter(c -> c.getEmail() != null && !c.getEmail().isEmpty())
-                .count();
-        System.out.println("Contactos con email: " + conEmail);
-        
-        Map<String, Long> porCategoria = contactos.stream()
-                .collect(Collectors.groupingBy(Contacto::getCategoria, Collectors.counting()));
-        
-        System.out.println("\nContactos por categoria:");
-        porCategoria.forEach((cat, count) -> System.out.println("  " + cat + ": " + count));
     }
 }

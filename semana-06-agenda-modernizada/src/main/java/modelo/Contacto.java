@@ -10,8 +10,7 @@ public class Contacto {
     private String categoria;
     private String direccion;
 
-    public Contacto(String id, String nombre, String telefono, String email, String categoria, String direccion) {
-        this.id = id;
+    public Contacto(String nombre, String telefono, String email, String categoria, String direccion) {
         setNombre(nombre);
         setTelefono(telefono);
         setEmail(email);
@@ -19,7 +18,8 @@ public class Contacto {
         setDireccion(direccion);
     }
 
-    public Contacto(String nombre, String telefono, String email, String categoria, String direccion) {
+    public Contacto(String id, String nombre, String telefono, String email, String categoria, String direccion) {
+        this.id = id;
         setNombre(nombre);
         setTelefono(telefono);
         setEmail(email);
@@ -80,11 +80,4 @@ public class Contacto {
     public String toString() {
         return String.format("[%s] %s | Tel: %s | %s", id, nombre, telefono, categoria);
     }
-
-    public String toStringDetalle() {
-        return String.format("ID: %s\nNombre: %s\nTeléfono: %s\nEmail: %s\nCategoría: %s\nDirección: %s",
-                id, nombre, telefono, email, categoria,
-                direccion.isEmpty() ? "No especificada" : direccion);
-    }
-    
 }
