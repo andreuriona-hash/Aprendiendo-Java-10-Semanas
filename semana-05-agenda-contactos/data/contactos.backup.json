@@ -56,6 +56,13 @@
     "direccion": "Av. Santa Cruz 1234"
   },
   {
+    "id": "C009",
+    "nombre": "Diego Arce",
+    "telefono": "70345678",
+    "email": "diego.arce@hotmail.com",
+    "direccion": ""
+  },
+  {
     "id": "C010",
     "nombre": "Patricia Lima",
     "telefono": "68899011",
