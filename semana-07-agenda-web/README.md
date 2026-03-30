@@ -17,7 +17,7 @@ Primera aplicación web con Spring Boot y Vaadin. Muestra dos vistas navegables.
 
 ## Capturas
 
-capturas/Ejecucion1
+
 
 ![alt text](Ejecucion1.png)
 
