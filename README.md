@@ -18,41 +18,124 @@
 | 9 | Interfaces Gráficas | semana-09-gui/ |
 | 10 | Proyecto Final | semana-10-proyecto/ |
 
-##  Proyectos de cada semana
+##  Estructura del repositorio
 
-### Semana 1: Sistema de Calificaciones
-- Programa que gestiona notas de 5 estudiantes
-- Calcula promedios, nota máxima/mínima, aprobados/reprobados
-- Validación de notas y manejo de errores
-  
-### Semana 2: Gestor de Tareas POO
-- Clase Tarea con encapsulamiento
-- GestorTareas con ArrayList
-- IDs automáticos
-- Filtros por estado (pendientes/completadas)
-- Menú interactivo
 
-### Semana 3: Gestión de Vehículos POO
-- Clase abstracta Vehiculo
-- Herencia (Auto, Moto, Camion)
-- Interfaz Electrico
-- Vehículos eléctricos
-- Demostración de polimorfismo
-- Gestor con ArrayList y filtros
+Aprendiendo-Java-10-Semanas/
+•	README.md
+•	.gitignore
+semana-01-calificaciones/
+•	Main.java
+•	README.md
+capturas/
+•	ejecucion1.png
+•	ejecucion2.png/
+semana-02-gestor-tareas/ 
+•	Main.java
+•	README.md
+modelo/
+•	.gitkeep
+•	Tarea.java
+servicio/
+•	.gitkeep
+•	GestorTareas.java
+              capturas/
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
+•	ejecucion4.png
+•	ejecucion5.png
+•	ejecucion6.png/
+semana-03-vehiculos-poo/ 
+•	Main.java
+•	README.md
+             modelo/
+•	.gitkeep
+•	Auto.java
+•	AutoElectrico.java
+•	Camion.java
+•	Electrico.java
+•	Moto.java 
+•	MotoElectrica.java
+•	Vehiculo.java                                                                                                                   
+                   servicio/
+•	.gitkeep
+•	GestorVehiculos.java
+                   capturas/
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
+•	ejecucion4.png
+•	ejecucion5.png
+•	ejecucion6.png
+•	ejecucion7.png
+•	ejecucion8.png
+•	ejecucion9.png
+semana-04-estudiantes-collections/ 
+•	Main.java
+•	README.md
+                      modelo/
+•	.gitkeep
+•	Estudiante.java
+                                 servicio/
+•	.gitkeep
+•	GestorEstudiantes.java
+                                       capturas/
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
+semana-05-agenda-contactos/
+•	pom.xml
+•	README.md
+           src/
+           main/
+             java/
+•	Main.java
+               modelo/
+•	Contacto.java
+                  servicio/
+•	AgendaContactos.java
+                    util/
+•	ManejadorJSON.java
+                        exception/
+•	ContactoNoEncontradoException.java
+•	ContactoExistenteException.java
+•	DatoInvalidoException.java
+                              data/
+•	contactos.backup.json
+•	contactos.json
+                                  capturas/
+•	ejecucion1.png
+•	ejecucion2.png
+•	ejecucion3.png
+•	ejecucion4.png
+•	ejecucion5.png
+•	ejecucion6.png
+semana -06 - agenda - modernizada / 
+•	pom . xml
+            datos /
+•	contactos.backup.json
+•	contactos . json
+•	test_backup.json
+•	test_contactos.json
+                   src /
+                     main / java /
+                      modelo /
+•	Contacto . java
+servicio /
+•	GestorContactos . java
+                            util /
+•	ManejadorJSON . java
+•	Main . java
+                               test / java /
+                                servicio /
+•	GestorContactosTest . java
+•	.gitignore
+•	README . md
 
-### Semana 4: Sistema de Estudiantes con Collections
-- HashMap para búsqueda por carnet
-- TreeSet para ranking automático
-- ArrayList para historial
-- Comparable con desempate obligatorio
 
-### Semana 5: Agenda de Contactos con Excepciones y JSON
-- Excepciones personalizadas (checked y unchecked)
-- Persistencia en JSON con Gson
-- Backup automático antes de cada guardado
-- Validaciones en todos los campos
-- IDs automáticos (C001, C002...)
-- Búsqueda por ID y por nombre parcial
+              
+
 
 ##  Capturas
 Las capturas de cada proyecto están en sus respectivas carpetas.
