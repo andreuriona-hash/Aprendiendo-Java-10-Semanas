@@ -20,118 +20,138 @@
 
 ##  Estructura del repositorio
 
-
 Aprendiendo-Java-10-Semanas/
-•	README.md
-•	.gitignore
-semana-01-calificaciones/
-•	Main.java
-•	README.md
-capturas/
-•	ejecucion1.png
-•	ejecucion2.png/
-semana-02-gestor-tareas/ 
-•	Main.java
-•	README.md
-modelo/
-•	.gitkeep
-•	Tarea.java
-servicio/
-•	.gitkeep
-•	GestorTareas.java
-              capturas/
-•	ejecucion1.png
-•	ejecucion2.png
-•	ejecucion3.png
-•	ejecucion4.png
-•	ejecucion5.png
-•	ejecucion6.png/
-semana-03-vehiculos-poo/ 
-•	Main.java
-•	README.md
-             modelo/
-•	.gitkeep
-•	Auto.java
-•	AutoElectrico.java
-•	Camion.java
-•	Electrico.java
-•	Moto.java 
-•	MotoElectrica.java
-•	Vehiculo.java                                                                                                                   
-                   servicio/
-•	.gitkeep
-•	GestorVehiculos.java
-                   capturas/
-•	ejecucion1.png
-•	ejecucion2.png
-•	ejecucion3.png
-•	ejecucion4.png
-•	ejecucion5.png
-•	ejecucion6.png
-•	ejecucion7.png
-•	ejecucion8.png
-•	ejecucion9.png
-semana-04-estudiantes-collections/ 
-•	Main.java
-•	README.md
-                      modelo/
-•	.gitkeep
-•	Estudiante.java
-                                 servicio/
-•	.gitkeep
-•	GestorEstudiantes.java
-                                       capturas/
-•	ejecucion1.png
-•	ejecucion2.png
-•	ejecucion3.png
-semana-05-agenda-contactos/
-•	pom.xml
-•	README.md
-           src/
-           main/
-             java/
-•	Main.java
-               modelo/
-•	Contacto.java
-                  servicio/
-•	AgendaContactos.java
-                    util/
-•	ManejadorJSON.java
-                        exception/
-•	ContactoNoEncontradoException.java
-•	ContactoExistenteException.java
-•	DatoInvalidoException.java
-                              data/
-•	contactos.backup.json
-•	contactos.json
-                                  capturas/
-•	ejecucion1.png
-•	ejecucion2.png
-•	ejecucion3.png
-•	ejecucion4.png
-•	ejecucion5.png
-•	ejecucion6.png
-semana -06 - agenda - modernizada / 
-•	pom . xml
-            datos /
-•	contactos.backup.json
-•	contactos . json
-•	test_backup.json
-•	test_contactos.json
-                   src /
-                     main / java /
-                      modelo /
-•	Contacto . java
-servicio /
-•	GestorContactos . java
-                            util /
-•	ManejadorJSON . java
-•	Main . java
-                               test / java /
-                                servicio /
-•	GestorContactosTest . java
-•	.gitignore
-•	README . md
+│
+├── README.md
+├── .gitignore
+│
+├── semana-01-calificaciones/
+│   ├── capturas/
+│   │   ├── ejecucion1.png
+│   │   └── ejecucion2.png
+│   ├── Main.java
+│   └── README.md
+│
+├── semana-02-gestor-tareas/
+│   ├── capturas/
+│   │   ├── ejecucion1.png
+│   │   ├── ejecucion2.png
+│   │   ├── ejecucion3.png
+│   │   ├── ejecucion4.png
+│   │   ├── ejecucion5.png
+│   │   └── ejecucion6.png
+│   ├── modelo/
+│   │   └── Tarea.java
+│   ├── servicio/
+│   │   └── GestorTareas.java
+│   ├── Main.java
+│   └── README.md
+│
+├── semana-03-vehiculos-poo/
+│   ├── capturas/
+│   │   ├── ejecucion1.png
+│   │   ├── ejecucion2.png
+│   │   ├── ejecucion3.png
+│   │   ├── ejecucion4.png
+│   │   ├── ejecucion5.png
+│   │   ├── ejecucion6.png
+│   │   ├── ejecucion7.png
+│   │   ├── ejecucion8.png
+│   │   └── ejecucion9.png
+│   ├── modelo/
+│   │   ├── Auto.java
+│   │   ├── AutoElectrico.java
+│   │   ├── Camion.java
+│   │   ├── Electrico.java
+│   │   ├── Moto.java
+│   │   ├── MotoElectrica.java
+│   │   └── Vehiculo.java
+│   ├── servicio/
+│   │   └── GestorVehiculos.java
+│   ├── Main.java
+│   └── README.md
+│
+├── semana-04-estudiantes-collections/
+│   ├── capturas/
+│   │   ├── ejecucion1.png
+│   │   ├── ejecucion2.png
+│   │   └── ejecucion3.png
+│   ├── modelo/
+│   │   └── Estudiante.java
+│   ├── servicio/
+│   │   └── GestorEstudiantes.java
+│   ├── Main.java
+│   └── README.md
+│
+├── semana-05-agenda-contactos/
+│   ├── capturas/
+│   │   ├── ejecucion1.png
+│   │   ├── ejecucion2.png
+│   │   ├── ejecucion3.png
+│   │   ├── ejecucion4.png
+│   │   ├── ejecucion5.png
+│   │   └── ejecucion6.png
+│   ├── data/
+│   │   ├── contactos.backup.json
+│   │   └── contactos.json
+│   ├── src/
+│   │   └── main/
+│   │       └── java/
+│   │           ├── Main.java
+│   │           ├── modelo/
+│   │           │   └── Contacto.java
+│   │           ├── servicio/
+│   │           │   └── AgendaContactos.java
+│   │           ├── util/
+│   │           │   └── ManejadorJSON.java
+│   │           └── exception/
+│   │               ├── ContactoExistenteException.java
+│   │               ├── ContactoNoEncontradoException.java
+│   │               └── DatoInvalidoException.java
+│   ├── pom.xml
+│   └── README.md
+│
+├── semana-06-agenda-modernizada/
+│   ├── capturas/
+│   │   ├── (tus capturas aquí)
+│   ├── datos/
+│   │   ├── contactos.backup.json
+│   │   ├── contactos.json
+│   │   ├── test_backup.json
+│   │   └── test_contactos.json
+│   ├── src/
+│   │   └── main/
+│   │       └── java/
+│   │           ├── Main.java
+│   │           ├── modelo/
+│   │           │   └── Contacto.java
+│   │           ├── servicio/
+│   │           │   └── GestorContactos.java
+│   │           └── util/
+│   │               └── ManejadorJSON.java
+│   ├── test/
+│   │   └── java/
+│   │       └── servicio/
+│   │           └── GestorContactosTest.java
+│   ├── pom.xml
+│   └── README.md
+│
+├── semana-07-agenda-web/
+│   ├── agenda-web/
+│   │   ├── src/
+│   │   │   └── main/
+│   │   │       └── java/com/organizacion/agenda/
+│   │   │           ├── views/
+│   │   │           │   ├── ContactosView.java
+│   │   │           │   └── InicioView.java
+│   │   │           └── Application.java
+│   │   ├── Ejecucion1.png
+│   │   └── Ejecucion2.png
+│   ├── README.md
+│   └── Pom.xml
+│
+└── semana-08/
+    └── (por completar)
 
 
               
