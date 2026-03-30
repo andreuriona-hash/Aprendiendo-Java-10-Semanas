@@ -5,7 +5,6 @@ Primera aplicación web con Spring Boot y Vaadin. Muestra dos vistas navegables.
 
 ## Cómo ejecutar
 
-```bash
 mvn spring-boot:run
 Luego abrir http://localhost:8080
 
@@ -17,4 +16,9 @@ Luego abrir http://localhost:8080
 ## Capturas
 
 capturas/Ejecucion1
+
+![alt text](Ejecucion1.png)
+
+
 capturas/Ejecucion2
+![alt text](Ejecucion2.png)
