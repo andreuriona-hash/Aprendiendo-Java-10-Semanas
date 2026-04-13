@@ -28,6 +28,6 @@ Aplicación web con Spring Boot y Vaadin que demuestra el uso de AppLayout, Menu
 
 ## Capturas
 
-![alt text](inicio.png)
+![alt text](inicio-1.png)
 
-![alt text](contactos.png)
+![alt text](contactos-1.png)
