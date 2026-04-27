@@ -4,7 +4,7 @@
 Aplicación web que permite agregar contactos mediante un formulario con validaciones. Los datos se guardan en un archivo JSON y persisten entre reinicios de la aplicación.
 
 ## Arquitectura
-
+```
 ContactosView
      |
      v
@@ -15,6 +15,7 @@ ManejadorJSON <- lee / escribe contactos . json
      |
      v
 contactos . json
+```
 
 
 ## Componentes utilizados
@@ -40,19 +41,18 @@ Los contactos se guardan en el archivo `contactos.json` en la raíz del proyecto
 
 ## Cómo ejecutar
 
-```bash
-mvn spring-boot:run
-Luego abrir http://localhost:8080/contactos 
+1. cd semana-09-agenda-web
+2. mvn compile
+3. mvn spring-boot:run
+4. Luego abrir http://localhost:8080/contactos 
 
-Capturas
+## Capturas
 
-c:\Users\leone\OneDrive\Pictures\Formulario.png
+![alt text](Formulario-1.png)
 
+![alt text](ContactosJSON-1.png)
 
-c:\Users\leone\OneDrive\Pictures\ContactosJSON.png
-
-
-
+```
 Ejemplo de JSON generado
 {
     {
@@ -61,4 +61,4 @@ Ejemplo de JSON generado
         "telefono"; "68090383"
     }
 }
-
+```
