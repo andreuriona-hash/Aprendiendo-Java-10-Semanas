@@ -19,7 +19,7 @@
 | 10 | Proyecto Final | semana-10-proyecto/ |
 
 ##  Estructura del repositorio
-
+```
 Aprendiendo-Java-10-Semanas/
 │
 ├── README.md
@@ -137,38 +137,66 @@ Aprendiendo-Java-10-Semanas/
 │   └── README.md
 │
 ├── semana-07-agenda-web/
-│   ├── agenda-web/
-│   │   ├── src/
-│   │   │   └── main/
-│   │   │       └── java/com/organizacion/agenda/
-│   │   │           ├── views/
-│   │   │           │   ├── ContactosView.java
-│   │   │           │   └── InicioView.java
-│   │   │           └── Application.java
+│   ├── src/
+│   │   └── main/
+│   │       └── java/com/organizacion/agenda/
+│   │           ├── views/
+│   │           │   ├── ContactosView.java
+│   │           │   └── InicioView.java
+│   │           └── Application.java
+│   ├── capturas/
 │   │   ├── Ejecucion1.png
 │   │   └── Ejecucion2.png
 │   ├── README.md
-│   └── Pom.xml
+│   └── pom.xml
 │
-└── semana-08-agenda-web/
-├── pom.xml
-├── README.md
-├── capturas/
-│   ├── inicio.png
-│   └── contactos.png
-└── src/
-    └── main/
-        └── java/
-            └── com/
-                └── organizacion/
-                    └── agenda/
-                        ├── Application.java
-                        ├── ui/
-                        │   ├── MainLayout.java
-                        │   └── TarjetaContacto.java
-                        └── views/
-                            ├── InicioView.java
-                            └── ContactosView.java
+├── semana-08-agenda-web/
+│   ├── pom.xml
+│   ├── README.md
+│   ├── capturas/
+│   │   ├── inicio.png
+│   │   └── contactos.png
+│   └── src/
+│       └── main/
+│           └── java/
+│               └── com/
+│                   └── organizacion/
+│                       └── agenda/
+│                           ├── Application.java
+│                           ├── ui/
+│                           │   ├── MainLayout.java
+│                           │   └── TarjetaContacto.java
+│                           └── views/
+│                               ├── InicioView.java
+│                               └── ContactosView.java
+│
+└── semana-09-agenda-web/                    
+    ├── pom.xml
+    ├── README.md
+    ├── contactos.json
+    ├── capturas/
+    │   ├── formulario.png
+    │   └── json.png
+    └── src/
+        └── main/
+            └── java/
+                └── com/
+                    └── organizacion/
+                        └── agenda/
+                            ├── Application.java
+                            ├── modelo/
+                            │   └── Contacto.java
+                            ├── service/
+                            │   ├── ContactoService.java
+                            │   └── ManejadorJSON.java
+                            ├── ui/
+                            │   └── MainLayout.java
+                            └── views/
+                                ├── InicioView.java
+                                └── ContactosView.java
+```
+
+
 
 
               
