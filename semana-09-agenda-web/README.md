@@ -48,12 +48,14 @@ Los contactos se guardan en el archivo `contactos.json` en la raíz del proyecto
 
 ## Capturas
 
-![alt text](Formulario-1.png)
+![alt text](Formulario.png)
 
-![alt text](ContactosJSON-1.png)
+![alt text](ContactosJSON.png)
+
+
+## Ejemplo de JSON generado
 
 ```
-Ejemplo de JSON generado
 {
     {
         "nombre": "Leonel Uriona",
