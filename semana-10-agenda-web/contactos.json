@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Ana Quispe",
+    "email": "ana@gmail.com",
+    "telefono": "67209471"
+  },
+  {
+    "nombre": "Andre Uriona",
+    "email": "andre@loco.com",
+    "telefono": "67209471"
+  },
+  {
+    "nombre": "Leonel Uriona",
+    "email": "leo@gmail.com",
+    "telefono": "68090383"
+  },
+  {
+    "nombre": "Monica Fernandez",
+    "email": "monica@gmail.com",
+    "telefono": "75294988"
+  },
+  {
+    "nombre": "Paola Uriona",
+    "email": "paola@gmail.com",
+    "telefono": "78456521"
+  },
+  {
+    "nombre": "Adolfo Uriona",
+    "email": "adolfo@gmail.com",
+    "telefono": "75211411"
+  }
+]
