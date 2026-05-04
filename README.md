@@ -8,15 +8,15 @@
 | Semana | Tema | Carpeta |
 |--------|------|---------|
 | 1 | Java Esencial + Git | semana-01-calificaciones/ |
-| 2 | P00 Fundamentos | semana-02-gestor-tareas/ |
-| 3 | Gestion de vehiculos POO | semana-03-vehiculos/ |
-| 4 | Herencia y Polimorfismo | semana-04-herencia/ |
-| 5 | Manejo de Excepciones | semana-05-excepciones/ |
-| 6 | Colecciones | semana-06-colecciones/ |
-| 7 | Archivos | semana-07-archivos/ |
-| 8 | JDBC | semana-08-jdbc/ |
-| 9 | Interfaces Gráficas | semana-09-gui/ |
-| 10 | Proyecto Final | semana-10-proyecto/ |
+| 2 | POO Fundamentos | semana-02-gestor-tareas/ |
+| 3 | POO 2da Parte (Herencia, Polimorfismo, Interfaces) | semana-03-vehiculos-poo/ |
+| 4 | Collections Framework | semana-04-estudiantes-collections/ |
+| 5 | Excepciones y Persistencia JSON | semana-05-agenda-contactos/ |
+| 6 | Java Moderno (Streams, Optional, JUnit 5) | semana-06-agenda-modernizada/ |
+| 7 | Primera App Web con Vaadin | semana-07-agenda-web/ |
+| 8 | Componentes Visuales (Tarjetas, Menú) | semana-08-agenda-web/ |
+| 9 | Formulario, Validaciones y Persistencia | semana-09-agenda-web/ |
+| 10 | Proyecto Final - Agenda Completa | semana-10-agenda-web/ |
 
 ##  Estructura del repositorio
 ```
@@ -194,6 +194,37 @@ Aprendiendo-Java-10-Semanas/
                             └── views/
                                 ├── InicioView.java
                                 └── ContactosView.java
+
+semana-10-agenda-web/
+├── pom.xml
+├── README.md
+├── contactos.json
+├── eventos.json
+├── capturas/
+│   ├── contactos.png
+│   ├── eventos.png
+│   ├── contactos-json.png
+│   └── eventos-json.png
+└── src/
+    └── main/
+        └── java/
+            └── com/
+                └── organizacion/
+                    └── agenda/
+                        ├── Application.java
+                        ├── modelo/
+                        │   ├── Contacto.java
+                        │   └── Evento.java
+                        ├── service/
+                        │   ├── ManejadorJSON.java
+                        │   ├── ContactoService.java
+                        │   └── EventoService.java
+                        ├── ui/
+                        │   └── MainLayout.java
+                        └── views/
+                            ├── InicioView.java
+                            ├── ContactosView.java
+                            └── EventosView.java
 ```
 
 
