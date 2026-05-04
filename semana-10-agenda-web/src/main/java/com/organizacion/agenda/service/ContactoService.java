@@ -7,11 +7,12 @@ import java.util.stream.Collectors;
 
 @Service
 public class ContactoService {
-    private final ManejadorJSON manejador;
+    
+    private final ManejadorJSON<Contacto> manejador;
     private static final String ARCHIVO = "contactos.json";
     
     public ContactoService() {
-        this.manejador = new ManejadorJSON(ARCHIVO);
+        this.manejador = new ManejadorJSON<>(ARCHIVO);
     }
     
     public List<Contacto> obtenerTodos() {
@@ -37,6 +38,4 @@ public class ContactoService {
         lista.removeIf(c -> c.getNombre().equalsIgnoreCase(contacto.getNombre()));
         manejador.guardar(lista);
     }
-    
 }
-//
