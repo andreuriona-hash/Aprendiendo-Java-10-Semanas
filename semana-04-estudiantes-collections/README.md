@@ -3,52 +3,50 @@
 ##  Descripción
 Sistema de gestión de estudiantes que utiliza tres colecciones diferentes del Java Collections Framework, cada una con un rol específico: búsqueda rápida por carnet, ranking automático por promedio e historial de operaciones.
 
-##  Estructura del Proyecto 
- semana-04-estudiantes-collections/
-├── Main.java
-├── README.md
-├── modelo/
-│   └── Estudiante.java
-├── servicio/
-│   └── GestorEstudiantes.java
-└── capturas/
-├── ranking.png
-├── top5.png
-└──menu.png
-## Tabla comparativa para el README 
+## Tabla comparativa para el README
+
+```
 | Colección | Rol en el sistema | ¿Por qué? |
 |-----------|-------------------|-----------|
-| HashMap<String, Estudiante> | Búsqueda por carnet |  Permite encontrar un estudiante al instante sin recorrer toda la lista, ideal para
- buscar por identificador único. |
+| HashMap<String, Estudiante> | Búsqueda por carnet |  Permite encontrar un estudiante al instante sin recorrer toda la lista, ideal para buscar por identificador único. |
  
 | TreeSet<Estudiante> | Ranking automático por promedio | Mantiene el orden siempre. Al implementar Comparable, los estudiantes se ordenan automáticamente de menor a mayor promedio. El desempate por carnet evita que se pierdan estudiantes con el mismo promedio. |
 
 | ArrayList<String>| Historial de operaciones | Guarda el orden de llegada. Simple y eficiente para registrar secuencias de eventos. |
+```
 
-##  Funcionalidades Implementadas
+##  Cómo compilar y ejecutar el proyecto.
 
-| # | Requisito | Estado |
-|---|-----------|--------|
-| RF1 | Registrar estudiantes (carnet único) |
-| RF2 | Buscar por carnet | 
-| RF3 | Actualizar promedio |
-| RF4 | Eliminar estudiante |
-| RF5 | Ver ranking completo |
-| RF6 | Ver top 5 |
-| RF7 | Filtrar por carrera |
-| RF8 | Estadísticas (total, promedio general, mejor/peor) |
-| RF9 | Historial de operaciones |
+1. Entrar a la carpeta : ‘cd semana-04-estudiantes-collections‘
+2. Compilar : javac Main.java modelo/*.java servicio/*.java
+3. Ejecutar : ‘java Main‘
 
-##  Detalles Técnicos Importantes
+##  Ejemplo de salida del programa
+```
+==========================================
+    SISTEMA DE ESTUDIANTES - COLLECTIONS
+============================================
+1. Agregar estudiante
+2. Buscar por carnet
+3. Actualizar promedio
+4. Eliminar estudiante
+5. Ver ranking completo
+6. Ver top 5
+7. Filtrar por carrera
+8. Estadísticas
+9. Ver historial
+0. Salir
+Elija una opción:
+```
 
-### 1. Desempate en Comparable
-public int compareTo(Estudiante otro) {
-    int cmp = Double.compare(this.promedio, otro.promedio);
-    if (cmp == 0) return this.carnet.compareTo(otro.carnet);
-    return cmp;
-}
 ##  Capturas
 Las capturas de pantalla están en la carpeta  capturas/ e incluyen:
+
 - Menu Principal 
+![Ejecucion1](capturas/Ejecucion1.png)
+
 - Ranking completo de estudiantes
+![Ejecucion2](capturas/Ejecucion2.png)
+
 - Top 5 mejores promedios
+![Ejecucion3](capturas/Ejecucion3.png)

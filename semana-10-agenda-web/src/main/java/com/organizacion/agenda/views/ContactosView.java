@@ -4,6 +4,7 @@ import com.organizacion.agenda.modelo.Contacto;
 import com.organizacion.agenda.service.ContactoService;
 import com.organizacion.agenda.ui.MainLayout;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.confirmdialog.ConfirmDialog;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.H2;
@@ -83,7 +84,7 @@ public class ContactosView extends VerticalLayout {
         grid.addColumn(Contacto::getEmail).setHeader("Correo").setSortable(true).setFlexGrow(2);
         grid.addColumn(Contacto::getTelefono).setHeader("Teléfono").setFlexGrow(1);
         grid.setWidthFull();
-        grid.setHeight("260px");
+        grid.setHeight("300px");
 
         grid.asSingleSelect().addValueChangeListener(e -> {
             Contacto c = e.getValue();
@@ -101,6 +102,7 @@ public class ContactosView extends VerticalLayout {
             servicio.guardar(contacto);
             Notification.show("Guardado: " + contacto.getNombre());
             limpiar();
+            refrescarGrid();
         } catch (ValidationException e) {
             // Binder marca los campos con error automáticamente
         }
@@ -115,18 +117,17 @@ public class ContactosView extends VerticalLayout {
     }
 
     private void confirmarEliminacion(Contacto contacto) {
-        com.vaadin.flow.component.confirmdialog.ConfirmDialog dialogo = 
-            new com.vaadin.flow.component.confirmdialog.ConfirmDialog();
+        ConfirmDialog dialogo = new ConfirmDialog();
         dialogo.setHeader("Eliminar contacto");
-        dialogo.setText("Eliminar a " + contacto.getNombre() + "? Esta acción no se puede deshacer.");
+        dialogo.setText("Eliminar a " + contacto.getNombre() + "?");
         dialogo.setConfirmText("Eliminar");
         dialogo.setConfirmButtonTheme("error primary");
         dialogo.setCancelable(true);
         dialogo.addConfirmListener(e -> {
             servicio.eliminar(contacto);
             refrescarGrid();
-            limpiar();
             Notification.show(contacto.getNombre() + " eliminado");
+            limpiar();
         });
         dialogo.open();
     }

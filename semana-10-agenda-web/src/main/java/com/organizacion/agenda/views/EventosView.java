@@ -4,6 +4,7 @@ import com.organizacion.agenda.modelo.Evento;
 import com.organizacion.agenda.service.EventoService;
 import com.organizacion.agenda.ui.MainLayout;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.confirmdialog.ConfirmDialog;
 import com.vaadin.flow.component.datepicker.DatePicker;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.grid.Grid;
@@ -17,9 +18,10 @@ import com.vaadin.flow.data.binder.ValidationException;
 import com.vaadin.flow.router.Route;
 
 import java.time.LocalDate;
-@Route(value = "eventos", layout = MainLayout.class)
 
+@Route(value = "eventos", layout = MainLayout.class)
 public class EventosView extends VerticalLayout {
+
     private final EventoService servicio;
 
     private TextField campoTitulo = new TextField("Título");
@@ -83,7 +85,7 @@ public class EventosView extends VerticalLayout {
         grid.addColumn(Evento::getFecha).setHeader("Fecha").setSortable(true).setFlexGrow(1);
         grid.addColumn(Evento::getDescripcion).setHeader("Descripción").setFlexGrow(2);
         grid.setWidthFull();
-        grid.setHeight("260px");
+        grid.setHeight("300px");
 
         grid.asSingleSelect().addValueChangeListener(e -> {
             Evento ev = e.getValue();
@@ -101,8 +103,10 @@ public class EventosView extends VerticalLayout {
             servicio.guardar(evento);
             Notification.show("Guardado: " + evento.getTitulo());
             limpiar();
+            refrescarGrid();
         } catch (ValidationException e) {
-            }
+            // Binder marca los campos con error automáticamente
+        }
     }
 
     private void eliminar() {
@@ -114,18 +118,17 @@ public class EventosView extends VerticalLayout {
     }
 
     private void confirmarEliminacion(Evento evento) {
-        com.vaadin.flow.component.confirmdialog.ConfirmDialog dialogo = 
-            new com.vaadin.flow.component.confirmdialog.ConfirmDialog();
+        ConfirmDialog dialogo = new ConfirmDialog();
         dialogo.setHeader("Eliminar evento");
-        dialogo.setText("Eliminar " + evento.getTitulo() + "? Esta acción no se puede deshacer.");
+        dialogo.setText("Eliminar " + evento.getTitulo() + "?");
         dialogo.setConfirmText("Eliminar");
         dialogo.setConfirmButtonTheme("error primary");
         dialogo.setCancelable(true);
         dialogo.addConfirmListener(e -> {
             servicio.eliminar(evento);
             refrescarGrid();
-            limpiar();
             Notification.show(evento.getTitulo() + " eliminado");
+            limpiar();
         });
         dialogo.open();
     }
@@ -139,5 +142,4 @@ public class EventosView extends VerticalLayout {
     private void refrescarGrid() {
         grid.setItems(servicio.obtenerTodos());
     }
-    
 }

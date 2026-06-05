@@ -3,7 +3,7 @@
 
 ## Descripción
 
-Aplicación web con Spring Boot y Vaadin que demuestra el uso de AppLayout, MenuBar, Avatar, Icon y tarjetas personalizadas.
+Aplicación web con Spring Boot y Vaadin que demuestra el uso de AppLayout, MenuBar, Avatar, Icon y tarjetas personalizadas. Donde esta aplicacion web te permite ver tus contactos, su informacion social.
 
 ## Componentes utilizados
 
@@ -16,18 +16,20 @@ Aplicación web con Spring Boot y Vaadin que demuestra el uso de AppLayout, Menu
 
 ## Cómo ejecutar
 
-- 1) Colocar en la terminal: mvn spring-boot:run
+- 1) Entrar a la carpeta: ‘cd semana-08-agenda-web‘
 
-- 2) Luego abrir http://localhost:8080
+- 2) Compilar: mvn compile
 
-## Vistas
+- 3) Ejecutar: mvn spring-boot:run
 
-- 1) /: Pagina de inicio con titulo, descripcion y boton a contactos.
-
-- 2) /contactos: Pagina de contactos con mensaje y boton para volver, con una notificacion que aparece y desaparece.
+- 4) Luego abrir http://localhost:8080
 
 ## Capturas
 
+- 1) /: Pagina de inicio con titulo, descripcion y boton a contactos.
+
 ![alt text](inicio.png)
+
+- 2) /contactos: Pagina de contactos con mensaje y boton para volver, con una notificacion que aparece y desaparece.
 
 ![alt text](contactos.png)
