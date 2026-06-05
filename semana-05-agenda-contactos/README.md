@@ -18,12 +18,14 @@ El archivo data/contactos.json almacena los contactos en el siguiente formato:
 ```
 
 ## Excepciones Personalizadas
-```
-| Excepción | Tipo | Cuando se lanza |
-| DatoInvalidoException | Unchecked (RuntimeException) | Cuando un campo no cumple las validaciones: nombre vacio, telefono con menos de 7 digitos, email sin @ |
-| ContactoNoEncontradoException | Checked (Exception) | Cuando se busca un contacto por ID y no existe |
-| ContactoExistenteException | Checked (Exception) | Cuando se intenta agregar un contacto con ID duplicado |
-```
+
+
+| Excepción | Tipo | Cuándo sucede |
+|-----------|------|---------------|
+| **ContactoNoEncontradoException** | Checked | Cuando se busca o elimina un contacto que no existe |
+| **ContactoExistenteException** | Checked | Cuando se intenta agregar un contacto duplicado por ID |
+| **DatoInvalidoException** | Unchecked | Cuando los datos ingresados son inválidos (teléfono, email, etc.) |
+
 
 ## Como instalar y ejecutar con MAVEN
 
@@ -40,8 +42,13 @@ El archivo data/contactos.json almacena los contactos en el siguiente formato:
 ## Capturas de pantalla
 
 ![Ejecucion1](capturas/Ejecucion1.png)
+
 ![Ejecucion2](capturas/Ejecucion2.png)
+
 ![Ejecucion3](capturas/Ejecucion3.png)
+
 ![Ejecucion4](capturas/Ejecucion4.png)
+
 ![Ejecucion5](capturas/Ejecucion5.png)
+
 ![Ejecucion6](capturas/Ejecucion6.png)

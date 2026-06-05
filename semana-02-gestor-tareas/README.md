@@ -24,22 +24,15 @@ Programa en Java que implementa un gestor de tareas usando Programación Orienta
 +----------------+ +-------------------+
 | Tarea | | GestorTareas |
 +----------------+ +-------------------+
-| - id | | - tareas |
-| - titulo | | - proximoId |
-| - descripcion | +-------------------+
-| - estado | | + agregar() |
-+----------------+ | + listarTodas() |
-| + Tarea() |<>------->| + listarPendientes|
-| + getters/setters | + listarCompletadas|
-| + completar() | | + completarTarea()|
-| + estaCompletada() | + eliminarTarea() |
-| + mostrarInfo()| | + mostrarEstadisticas()
-+----------------+ +-------------------+
+| - id: int | | - tareas: ArrayList|
+| - titulo: String | - proximoId: int |
+| - descripcion: String +-------------------+
+| - estado: String | + agregar() |
++----------------+ | + listar() |
+| + getters/setters | + listarPendientes|
+| + completar() | | + listarCompletadas|
+| + estaCompletada() | + completarTarea()|
+| + mostrarInfo()| | + eliminarTarea() |
++----------------+ | + mostrarEstadisticas()
++-------------------+
 ```
-## Capturas
-![ejecucion 1](<capturas/ejecucion 1.png>)
-![ejecucion 2](<capturas/ejecucion 2.png>)
-![ejecucion 3](<capturas/ejecucion 3.png>)
-![ejecucion 4](<capturas/ejecucion 4.png>)
-![ejecucion 5](<capturas/ejecucion 5.png>)
-![ejecucion 6](<capturas/ejecucion 6.png>)

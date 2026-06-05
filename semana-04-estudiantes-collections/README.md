@@ -5,15 +5,13 @@ Sistema de gestión de estudiantes que utiliza tres colecciones diferentes del J
 
 ## Tabla comparativa para el README
 
-```
-| Colección | Rol en el sistema | ¿Por qué? |
-|-----------|-------------------|-----------|
-| HashMap<String, Estudiante> | Búsqueda por carnet |  Permite encontrar un estudiante al instante sin recorrer toda la lista, ideal para buscar por identificador único. |
- 
-| TreeSet<Estudiante> | Ranking automático por promedio | Mantiene el orden siempre. Al implementar Comparable, los estudiantes se ordenan automáticamente de menor a mayor promedio. El desempate por carnet evita que se pierdan estudiantes con el mismo promedio. |
 
-| ArrayList<String>| Historial de operaciones | Guarda el orden de llegada. Simple y eficiente para registrar secuencias de eventos. |
-```
+| Colección | Rol en el sistema | Por qué se usa |
+|-----------|-------------------|----------------|
+| **HashMap<String, Estudiante>** | Búsqueda de estudiantes por carnet | Permite encontrar un estudiante de forma instantánea usando su carnet como clave |
+| **TreeSet<Estudiante>** | Ranking automático de estudiantes | Mantiene los estudiantes ordenados automáticamente por promedio |
+| **ArrayList<String>** | Historial de operaciones | Guarda el registro de acciones realizadas en el sistema |
+
 
 ##  Cómo compilar y ejecutar el proyecto.
 
@@ -22,6 +20,7 @@ Sistema de gestión de estudiantes que utiliza tres colecciones diferentes del J
 3. Ejecutar : ‘java Main‘
 
 ##  Ejemplo de salida del programa
+
 ```
 ==========================================
     SISTEMA DE ESTUDIANTES - COLLECTIONS
@@ -43,10 +42,23 @@ Elija una opción:
 Las capturas de pantalla están en la carpeta  capturas/ e incluyen:
 
 - Menu Principal 
+
+
+
 ![Ejecucion1](capturas/Ejecucion1.png)
 
+
+
 - Ranking completo de estudiantes
+
+
+
 ![Ejecucion2](capturas/Ejecucion2.png)
 
+
+
 - Top 5 mejores promedios
+
+
+
 ![Ejecucion3](capturas/Ejecucion3.png)

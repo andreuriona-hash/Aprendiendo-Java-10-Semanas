@@ -5,7 +5,7 @@ Proyecto que refactoriza el GestorContactos de la Semana 5 usando Streams y Opti
 
 ## Métodos refactorizados con Streams
 
-```
+
 | Método | Antes (for loop) | Después (Stream) |
 |--------|------------------|------------------|
 | `buscarPorNombre` | for con if | `stream().filter().findFirst()` |
@@ -14,7 +14,7 @@ Proyecto que refactoriza el GestorContactos de la Semana 5 usando Streams y Opti
 | `contarPorCategoria` | for con if + contador | `stream().filter().count()` |
 | `listarOrdenados` | Collections.sort | `stream().sorted().collect()` |
 | `agregarContacto` | for con bandera | `stream().anyMatch()` |
-```
+
 
 ### Tests implementados (8 tests)
 
